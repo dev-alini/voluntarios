@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Voluntários e Doações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ajude as Vítimas das Enchentes no RS</h1>
+        <nav>
+            <ul>
+                <li><a href="#voluntarios">Cadastro de Voluntários</a></li>
+                <li><a href="#doacoes">Cadastro de Doações</a></li>
+                <li><a href="#pontos-coleta">Pontos de Coleta</a></li>
+                <li><a href="#mapa">Mapa Interativo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cadastro de Voluntários -->
+        <section id="voluntarios">
+            <h2>Cadastro de Voluntários</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="area">Área de Atuação:</label>
+                <select id="area" name="area">
+                    <option value="resgate">Resgate</option>
+                    <option value="distribuicao">Distribuição de Alimentos</option>
+                    <option value="apoio">Apoio Psicológico</option>
+                </select>
+
+                <label for="disponibilidade">Disponibilidade:</label>
+                <input type="text" id="disponibilidade" name="disponibilidade" placeholder="Ex: Fins de semana, 8h às 18h" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <!-- Cadastro de Doações -->
+        <section id="doacoes">
+            <h2>Cadastro de Doações</h2>
+            <form>
+                <label for="item">Item para Doação:</label>
+                <input type="text" id="item" name="item" required>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" required>
+
+                <label for="contato">Contato:</label>
+                <input type="text" id="contato" name="contato" required>
+
+                <button type="submit">Cadastrar Doação</button>
+            </form>
+        </section>
+
+        <!-- Pontos de Coleta -->
+        <section id="pontos-coleta">
+            <h2>Pontos de Coleta e Abrigos Temporários</h2>
+            <ul>
+                <li>Ponto de Coleta 1 - Rua A, 123, Porto Alegre</li>
+                <li>Ponto de Coleta 2 - Avenida B, 456, Caxias do Sul</li>
+                <li>Abrigo Temporário - Rua C, 789, Pelotas</li>
+            </ul>
+        </section>
+
+        <!-- Mapa Interativo -->
+        <section id="mapa">
+            <h2>Mapa Interativo</h2>
+            <p>Em breve, disponibilizaremos um mapa interativo com os locais onde há maior necessidade de ajuda.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Voluntários e Doações. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
